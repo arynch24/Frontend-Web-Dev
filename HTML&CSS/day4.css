@@ -1,0 +1,13 @@
+/* group selector */
+h1,p{
+    color: red;
+}
+
+#pep{
+    border: 2px solid orange;padding-right: 0px;
+    color:blue;
+}
+
+*{
+    color:pink;
+}
