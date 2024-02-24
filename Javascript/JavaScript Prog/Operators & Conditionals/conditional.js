@@ -11,3 +11,4 @@ if(mode==="light")
 }
 
 console.log(color);
+
