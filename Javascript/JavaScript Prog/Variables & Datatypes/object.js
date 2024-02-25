@@ -15,6 +15,7 @@ const student ={
 //we can change the keys and values of const object code.
 //but memory remains same it doesnt changes.
 // to cahnge it whole object code needs to be changed which will show error becausse of const.
+
 //new key:value
 student["namkarad"]="ULLU KA PATHA";
 console.log(student)
