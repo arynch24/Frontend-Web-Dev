@@ -19,10 +19,9 @@ console.log(string.slice(4,7));
 //joins two strings
 console.log(string.concat(me));
 console.log(string+" mai noobb hu   "+me);
+
 //number is converted into string. than added.
 console.log("hello"+7777);
-
-
 
 //str.replace(searchvalue, new value)
 console.log(me.replace("Web","App"));
