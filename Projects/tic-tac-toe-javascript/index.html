@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tic Tac Toe</title>
+	<script type="text/javascript" src="js/scripts.js"></script>
+	<link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+	<div class="game-area">
+
+		<div class="game-options">
+			<select name="game_type" id="game_type" onchange="resetAIButton()">
+				<!-- <option value="3">3 x 3 Board</option> -->
+				<option value="4">4 x 4 Board</option>
+				<option value="5">5 x 5 Board</option>
+			</select>
+			
+			<input type="checkbox" name="robot" checked="true" id="robot"> With Computer? <br/>
+			<input type="submit" value="Start Game" onclick="generateGame()" class="submit-button"> 
+		</div>
+
+		<div id="game-board" class="game-board">
+			<h1>Please select your game from above, then press 'Start Game'.</h1>
+		</div>
+		<div class="score-card">
+			<h2>Your Score: <span id="score-X">0</span> <br></h2>
+			<h2>AI Score: <span id="score-Y">0</span></h2>
+		</div>
+		<div style="position: absolute; top:20px;left:30px;">
+			<img src="C:\Users\arync\Desktop\tictactoe\tic-tac-toe-javascript\pw.png" style="height:110px;width: 300px;">
+		</div>
+		<div style="position:absolute;top:0px;left:1250px">
+			<img src="C:\Users\arync\Desktop\tictactoe\tic-tac-toe-javascript\1677048737433-removebg-preview.png" style="height:130px;width: 130px;">
+		</div>
+		
+	</div><br><br><br>
+
+	<h2 style="text-align: center;">X - Player</h2>
+	<h2 style="text-align: center;">Y - AI</h2>
+
+</body>
+</html>

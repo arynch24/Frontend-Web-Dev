@@ -1,0 +1,65 @@
+body {
+	margin: 0 auto;
+	font-family: Arial;
+	background-color: rgb(164, 158, 232);
+}
+
+input::-moz-focus-inner { 
+  border: 0; 
+}
+
+a {
+   outline: 0;
+}
+
+.submit-button {
+	margin-top: 20px;
+	width: 280px;
+}
+.game-area {
+	margin:0 auto;
+	text-align: center;
+	padding-top: 20px; 
+}
+
+.game-options {
+	border-bottom: 1px dashed #CFCFCF;
+	padding-bottom: 20px;
+}
+.game-options select, .game-options input  {
+	border: 1px solid #333;
+	padding: 10px;
+	margin-right: 10px;
+	outline: none;
+}
+.game-board {
+	margin-top: 50px;
+	padding: 10px;
+}
+
+.grid-box, .green-player, .red-player {
+	font-size: 35px;
+	padding: 15px 25px;
+	width: 80px;
+	height: 80px;
+	margin:0px;
+	background-color: #FCFCFC;
+	outline: none;
+}
+.green-player {
+	background-color: rgb(82, 23, 86);
+	color: #FFF;
+}
+.red-player {
+	background-color: #FFCA1B;
+	color: #FFF;
+}
+
+.score-card {
+	font-weight: bold;
+	line-height: 25px;
+}
+.score-card span {
+	font-weight: normal;
+}
+
