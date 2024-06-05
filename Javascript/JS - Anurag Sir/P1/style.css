@@ -1,0 +1,17 @@
+.body {
+    height: 100vh;
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin-top: 25%;
+    margin-left: 40%;
+    height:20px;
+    background-color: blue;
+    color: white;
+}
