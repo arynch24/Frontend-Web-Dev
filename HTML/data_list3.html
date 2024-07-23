@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <style>
+
+       dl{
+         display: grid;
+         grid-template-columns: 3fr 9fr;
+       }
+
+       dt{
+         background-color: black;
+         color:white;
+         padding: 5px;
+         margin-bottom: 10px;
+       }
+
+       dd{
+        background-color: lightgray;
+        color:black;
+        padding: 5px;
+        margin-bottom: 10px;
+        width: 200px;
+       }
+
+       fieldset{
+         margin-bottom: 20px;
+         border-radius: 10px;
+         width: 500px;
+         box-shadow: 10px 10px 5px black;
+         background-image: url(public/images/background-banner.jpeg);
+         background-size: cover;
+       }
+
+       legend{
+          text-align: center;
+          background-color: black;
+          color:white;
+          padding: 5px;
+          border-radius: 20px;
+       }
+
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Person details</legend>
+        <dl>
+            <dt>FirstName</dt>
+            <dd>SomeName</dd>
+            <dt>LastName</dt>
+            <dd>SomeName</dd>
+            <dt>Age</dt>
+            <dd>SomeAge</dd> 
+         </dl>
+    </fieldset>
+    
+    <fieldset>
+        <legend>Contact details</legend>
+        <dl>
+            <dt>City</dt>
+            <dd>SomeCity</dd>
+            <dt>State</dt>
+            <dd>SomeState</dd>
+            <dt>PostalCode</dt>
+            <dd>Somepostalcode</dd>
+         </dl>
+    </fieldset>
+     
+</body>
+</html>
