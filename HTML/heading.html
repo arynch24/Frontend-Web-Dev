@@ -1,0 +1,66 @@
+<!-- heading elements are mainly used to define headings and t descripe a topic in a web page. -->
+<!-- heading element default behaviour is --
+1. display:block;
+2. font-weight: bold;
+3. font-size: varies; -->
+
+<!-- Q. Why to use heading element for headings?
+Q. Why we have to use heading elements 
+
+Q. can we change the appearance <hn> tag? 
+    tHROUGH css we can change the default behaviour.
+
+
+Q.
+yes it can be made possible with the help of css inheritance
+h3{
+    font-weight:unset;
+    display: unset;
+    font-size:unset;
+
+    // to remove all properties
+
+    all:unset;
+} -->
+
+eg#2.
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>headings</title>
+    <style>
+        h3 {
+            /* appearance  */
+
+            /* font-weight: unset;
+            display: unset;
+            font-size: unset; */
+
+            all:unset;
+        }
+    </style>
+
+</head>
+
+<body onload="bodyload()">
+    <h1>WebTechnologies</h1>
+    <h2>FrontEnd</h2>
+    <h3>HTML</h3>
+    It is a Presentation language
+    <h3>CSS</h3>
+    It is a Styling language
+    <br><br>
+    <font size='4'>
+        <b>JavaScript</b><br><br>
+    </font>
+    It is a Scripting language
+    <h2>BackEnd</h2>
+    <h3>Node JS</h3>
+    It is a server side scripting language
+    <h3>MongoDB</h3>
+    It is a database engine
+</body>
+</html>
