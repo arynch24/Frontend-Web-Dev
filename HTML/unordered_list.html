@@ -1,0 +1,80 @@
+<!-- Unordered List
+- It is used to define bulleted list.
+- Bulleted list comprises of symbol instead of numbering.
+- Unordered list is defined by using “<ul>”
+- List items are defined by using “<li>”
+- The attribute “type” defines the symbol type,which can be
+	o disc
+	o circle
+	o square
+
+
+<body>
+	<ul type="square">
+		<li>Web Sever</li>
+		<li>Web Site</li>
+		<li>Web Page</li>
+	</ul>
+</body>
+
+How to set Custom bullets?
+ Ans. we can do by using list-style-image attribute of css.
+
+eg#5
+Flipkart website for displaying contents using ol
++++++++++++++++++++++++++++++++++++++++++++++++++
+Note: Hint we can use bootstrap icons
+
+eg#6 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts</title>
+    <style type="text/css">
+
+        ul{
+            list-style: none;
+        }
+        li{
+            font-size: 10px;
+            font-family: Arial;
+            margin-bottom: 10px;
+          
+        }
+        span{
+            font-weight: bold;
+        }
+    </style>
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body>
+    <ul>
+        <li class="bi bi-tag-fill">
+            <span>Bank Offer</span> Get ₹25 Instant Discount on first Flipkart UPI transaction on order of ₹200 and aboveT&C
+        </li>
+        <li class="bi bi-tag-fill">
+            <span>Bank Offer</span> 5% Cashback on Flipkart Axis Bank CardT&C
+        </li>
+        <li class="bi bi-tag-fill">
+            <span>Bank Offer</span> Flat ₹1,250 off on HDFC Bank Credit Card EMI Txns, Tenure: 6 and 9 months, 
+		Min Txn Value: ₹15,000T&C
+        </li>
+        <li class="bi bi-tag-fill">
+            <span>Special Price</span> Get extra 7% off (price inclusive of cashback/coupon)T&C
+        </li>
+    </ul>
+</body>
+</html>
+
+<!-- Q> To display the content in fixed style we can use the following attributes of css in "ul"
+ ul{
+            list-style: none;
+            position: fixed;
+            right: 20px;
+            bottom: 10px;
+            width: 5px;	
+            background-color: white;
+            padding: 5px;
+   } -->
