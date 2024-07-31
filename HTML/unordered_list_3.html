@@ -1,61 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
-    <style type="text/css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Title</title>
+  <style type="text/css">
+    ul {
+      list-style: none;
+      display: flex;
+      font-family: Arial;
+    }
 
-        ul{
-            list-style: none;
-            display: flex;
-            font-family: Arial;
-        }
+    li {
+      margin-right: 10px;
+      padding: 5px;
+      width: 25px;
+      border: 1px solid blue;
+      border-radius: 10px;
+      text-align: center;
+      background-color: lightblue;
+    }
 
-        li{
-          margin-right: 10px;
-          padding:5px;
-          width: 25px;
-          border: 1px solid blue;
-          border-radius: 10px;
-          text-align: center;
-          background-color: lightblue; 
-        }
+    li:hover {
+      background-color: black;
+      color: white;
+      cursor: pointer;
+    }
 
-        li:hover{
-            background-color: black;
-            color: white;
-            cursor: pointer;
-        }
-        .disabled{
-            background-color: grey;
-            color:white;
-            border: none;
-        }
-        .disabled:hover{
-           cursor: not-allowed;
-        }
-	nav{
-		display: flex;
-		justify-content: center;
-		align-items : end;
-	}
-    </style>
+    .disabled {
+      background-color: grey;
+      color: white;
+      border: none;
+    }
+
+    .disabled:hover {
+      cursor: not-allowed;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: end;
+    }
+  </style>
 </head>
+
 <body>
   <nav>
     <ul>
-        <li><span>&laquo;</span></li>
-        <li><span>1</span></li>
-        <li><span>2</span></li>
-        <li><span>3</span></li>
-        <li class="disabled"><span>4</span></li>
-        <li><span>5</span></li>
-        <li><span>...</span></li>
-        <li><span>&raquo;</span></li>
+      <li><span>&laquo;</span></li>
+      <li><span>1</span></li>
+      <li><span>2</span></li>
+      <li><span>3</span></li>
+      <li class="disabled"><span>4</span></li>
+      <li><span>5</span></li>
+      <li><span>...</span></li>
+      <li><span>&raquo;</span></li>
     </ul>
   </nav>
 </body>
+
 </html>
 
 <!-- FAQ
