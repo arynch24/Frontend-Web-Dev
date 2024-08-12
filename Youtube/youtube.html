@@ -1,42 +1,306 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YouTube</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <style>
-        *{
-            margin:0px;
-            background-color: black;
+        * {
+            margin: 0px;
+            background-color: #0f0f0f;
+            color: #f1f1f1;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        header{
+
+        .bi {
+            font-size: 20px;
+        }
+
+        header {
             height: 58px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
-        img{
-            height:56px;
-            width:129px;
+
+        .logo img {
+            height: 50px;
+            width: 140px;
         }
-        .bi{
-            color: white;
+
+        .bi-list {
+            font-size: 24px;
+            padding: 8px;
         }
+
+        .youtube-logo {
+            display: flex;
+            align-items: center;
+            margin-left: 10px;
+        }
+
+        .logo {
+            padding-top: 5px;
+        }
+
+        .search {
+            width: 530px;
+            height: 36px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 25px;
+            border: 0.7px solid gray;
+            padding: 1px 15px;
+        }
+
+        .search-area {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .bi-mic-fill {
+            margin-left: 20px;
+            font-size: 17px;
+            background-color: #ffffff14;
+            padding: 10px;
+            border-radius: 50px;
+        }
+
+        .bi-search {
+            background-color: #ffffff14;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-bottom-right-radius: 25px;
+            border-top-right-radius: 25px;
+            margin-right: -16px;
+        }
+        .search span p{
+            color: gray;
+        }
+
+        sup {
+            vertical-align: sup;
+            font-size: small;
+            background-color: #cc0000;
+            border-radius: 25px;
+            padding: 2px 4px;
+            margin-left: -10px;
+        }
+
+        .profile-section {
+            width: 150px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-right: 30px;
+        }
+
+        .profile img {
+            height: 32px;
+            width: 32px;
+            border-radius: 25px;
+            margin-top: 4px;
+        }
+
+        section {
+            display: grid;
+            grid-template-columns: 2fr 10fr;
+        }
+
+        nav {
+            font-size: 16px;
+            height: 520px;
+            width: 240px;
+
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        li {
+            display: flex;
+            margin: 15px 0px;
+        }
+
+        li p {
+            margin: 3px 0px 0px 22px;
+            font-size: 14px;
+        }
+
+        li h3 {
+            font-size: 16px;
+        }
+
+        .bi-chevron-right {
+            font-size: 12px;
+        }
+
+        hr {
+            margin: 20px 10px;
+            font-weight: lighter;
+            border-width: 0.1px;
+            border-color: gray;
+            width: 220px;
+        }
+
+        .banner-section {
+            width: 1080px;
+            height: 172px;
+            padding: 0px 45px;
+        }
+
+        .banner-section img {
+            width: 100%;
+            height: 172px;
+            border-radius: 15px;
+        }
+
+        .channel-profile{
+            height: 208px;
+            padding: 16px 45px 4px;
+            display: flex;
+            align-items: center;
+            
+        }
+
+        .channel-logo img{
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+
+        h1{
+            font-size: 36px;
+        }
+
+        .channel-details span p{
+            margin: 10px 0px;
+            font-size: 14px;
+        }
+
+        .channel-subscribe {
+            width:150px;
+            height:36px;
+            background-color: #ffffff14;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            border-radius: 25px;
+            margin-top: 15px;
+        }
+        .channel-subscribe span{
+            background-color: #ffffff14;
+
+        }
+
+        .video{
+            height:1000px;
+        }
+
+
 
     </style>
 </head>
+
 <body>
     <header>
-        <div>
+        <div class="youtube-logo">
             <span class="bi bi-list"></span>
-            <span><img src="../Youtube/youtube-logo.png" alt=""></span>
+            <span class="logo"><img src="../Youtube/youtube-logo.png" alt=""></span>
         </div>
-        <div>
-            <div>
-                <span>Search</span>
+        <div class="search-area">
+            <div class="search">
+                <span><p>Search</p></span>
                 <span class="bi bi-search"></span>
             </div>
-            <div></div>
+            <div><span class="bi bi-mic-fill"></span></div>
         </div>
-        <div></div>
+        <div class="profile-section">
+            <span class="bi bi-camera-video"></span>
+            <span class="bi bi-bell"><sup>9+</sup></span>
+            <span class="profile"><img src="/Youtube/profile.jpg" alt=""></span>
+        </div>
     </header>
+    <section>
+        <nav>
+            <ul>
+                <li class="bi bi-house-door">
+                    <p>Home</p>
+                </li>
+                <li class="bi bi-app-indicator">
+                    <p>Shorts</p>
+                </li>
+                <li class="bi bi-collection-play">
+                    <p>Subscriptions</p>
+                </li>
+                <li class="bi bi-play-circle">
+                    <p>Youtube Music</p>
+                </li>
+            </ul>
+            <hr>
+            <ul>
+                <li>
+                    <h3>You <i class="bi bi-chevron-right"></i></h3>
+                </li>
+                <li class="bi bi-person">
+                    <p>Your chanell</p>
+                </li>
+                <li class="bi bi-clock-history">
+                    <p>History</p>
+                </li>
+                <li class="bi bi-music-note-list">
+                    <p>Playlists</p>
+                </li>
+                <li class="bi bi-play-btn">
+                    <p>Your Videos</p>
+                </li>
+                <li class="bi bi-clock">
+                    <p>Watch Later</p>
+                </li>
+                <li class="bi bi-hand-thumbs-up">
+                    <p>Liked Videos</p>
+                </li>
+                <li class="bi bi-download">
+                    <p>Downloads</p>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <div class="banner-section">
+                <img src="/Youtube/banner.jpg" alt="">
+            </div>
+            <div class="channel-profile">
+                <div class="channel-logo">
+                    <img src="/Youtube/pw logo.jpg" alt="">
+                </div>
+                <div >
+                    <div class ="channel-details">
+                        <h1>PW Institute of Innovation</h1>
+                        <span>
+                            <p>@PW-IOI • 7.23K subscribers • 157 videos</p>
+                        </span>
+                        <span>
+                            <p>Shaping Futures, Empowering Innovators! 🚀
+                                ...more</p>
+                        </span>
+                        <span style="display: flex;"><p style="color: #3ea6ff;">pwioi.com/?utm_source=Youtube&utm_medium=Social&utm_campaign=Org</p><p>... and 8 more links</p></span>
+                    </div>
+                    <div class="channel-subscribe">
+                        <span class="bi bi-bell"></span>
+                        <span>Subscribed</span>
+                        <span class="bi bi-chevron-right"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="video">
+
+            </div>
+        </main>
+    </section>
 </body>
+
 </html>
