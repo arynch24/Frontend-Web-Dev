@@ -1,49 +1,125 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" href="table.css"/>
-    <title>
-      List
-    </title>
-  </head>
-<style>
-table, th, td {
-  border:1px solid black;
-   border-collapse: collapse;
-}
-</style>
-<body>
+<!--
+ Tables are used to organise the data in rows and columns (data presented inside the table is not seo freindly)
+ Tables internally are presented with the help of grid component.
+ Data in a table is static whereas we give the effects of filtering fron a sorting through backend technology.
+ In earlier verrsions of HTML tables were used to design layouts(rows and columns)
+ In HTML 5 we use tables only to present a data in static manner with the help of elements asa shown below.
 
-<table style="width:100%">
-  <tr>
-    <th>Name</th>
-    <th>Intrest</th>
-    <th>Hobby</th>
-  </tr>
-  <tr>
-    <td>Aryan Chauhan</td>
-    <td>Playing Badminton</td>
-    <td>Listening Music</td>
-  </tr>
-  <tr>
-    <td>Shoyeb</td>
-    <td>Watching Anime</td>
-    <td>Drawing</td>
-  </tr>
-  <tr>
-    <td>Prakhar Sahu</td>
-    <td>Video Editing</td>
-    <td>Maje lena</td>
-  </tr>
-  <tr>
-    <td>Daanish Shaikh</td>
-    <td>Playing Carrom</td>
-    <td>Playing COC</td>
-  </tr>
-</table>
+
+ Element 
+
+ <table>  It is a collection of rows and columns.
+ <captions>  It set caption for tables which makes it SEO freindly.
+ <thead>   It defines the table header section.
+ <tbody> 
+ <tfoot>
+ <th>
+ <td>
+ <tr>
+
+  
+  ** Attributes of Table
+  1. Frame: void, box,above,below,rhs,lhs;
+  void - It would not attach any border to the table 
+  This attribute is normally used to remove the outer border from the table
+
+  2. Border: 1 or 0;
+  This attribute is used the border for entire table (for each cell and also it sets a frame for the entire table)
+  The value of  a border would be 0 or 1(with respect to the cell if we increase it to any number there woulf not be any effect.)
+  
+  Note - Cell Spacing and Cell Padding - It is similar ot margin and padding.
+
+  3. Rules: none,all,column
+  If we use rules and border together rules value wouuld dominate.
+  Whenever we use rules we should not work with border and when we use border we should not use rules.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<style>
+  td{
+    border: 1px solid black;
+  }
+</style>
+
+<body>
+  <table width:"100%" rules:"all" > 
+    <caption>Asia Cup Point Table 2024</caption>
+    <thead>
+      <tr>
+        <td>Position</td>
+        <td>Teams</td>
+        <td>Matches</td>
+        <td>Won</td>
+        <td>Lost</td>
+        <td>Tied</td>
+        <td>NR</td>
+        <td>Points</td>
+        <td>NRR</td>
+        <td>Series Form</td>
+      </tr>
+
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td ><img src="/Fashion Store/public/images/world.png" width="5%" height="5%"></td>
+        <td>IND</td>
+        <td>2</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>3</td>
+        <td>+4.760</td>
+        <td><span class="W">W</span></td>
+        <td><span class="A">A</span></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td><img src="/Fashion Store/public/images/pakistan.png" width="5%" height="5%"></td>
+        <td>PAK</td>
+        <td>2</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>3</td>
+        <td>+1.028</td>
+        <td><span class="W">A</span></td>
+        <td><span class="A">W</span></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td><img src="/Fashion Store/public/images/nepal.png" width="5%" height="5%"></td>
+        <td>Nepal</td>
+        <td>2</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><span class="W">L</span></td>
+        <td><span class="A">L</span></td>
+      </tr>
+    </tbody>
+    <tfoot>
+
+    </tfoot>
+
+  </table>
+
 
 
 
 </body>
-</html>
 
+</html>
