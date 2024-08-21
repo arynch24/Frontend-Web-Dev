@@ -4,11 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Shopper</title>
     <!-- Option 1: Include in HTML -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
     <style>
+        * {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
         .nav1 {
             height: 90px;
             width: vw;
@@ -50,7 +55,8 @@
             font-style: bold;
         }
 
-        .nav1-t {
+        .nav1-text a {
+            font-weight: 600;
             size: 74.24px 40px;
             padding: 8px 16px;
 
@@ -58,7 +64,7 @@
 
         .nav2 {
             height: 48px;
-            width: vw;
+            width: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -78,42 +84,269 @@
             color: white;
             height: 18px;
             width: 318px;
+            font-size: 14px;
         }
 
-        .blitz{
-            color:rgb(255, 106, 0);
+        .blitz {
+            color: rgb(255, 106, 0);
+        }
+
+        main{
+            height:470px;
+            width:vw;
+            display: grid;
+            grid-template-columns: 4fr 4fr 4fr;
+            margin-top:15px;
+            grid-gap:2px;
+
+        }
+
+        .women-fashion:hover, .men-fashion:hover , .kids-fashion:hover{
+            opacity: 1;
+        }
+
+        .women-fashion{
+            background: url("./../public/images/women-fashion.jpg");
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            opacity:0.95;
+            
+        }
+
+        .men-fashion{
+            background: url("./../public/images/men-fashion.jpg");
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity:0.95;
+        }
+        
+        .kids-fashion{
+            background: url("./../public/images/kids-fashion.jpg");
+            background-size: cover;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity:0.95;
+        }
+
+        main .card-header{
+            font-size: 44px;
+            font-weight: bold;
+            color: #ffffff;
+            margin-top: 100px;
+            text-align: center;
+        }
+        button{
+            padding: 15px 20px;
+            background-color: #ffffff;
+            font-size: 16px;
+            border: none;
+            margin-top: 150px;
+        }
+
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .card-section {
+            height: 600px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center
+        }
+
+        .card-section .card {
+            height: 275px;
+            width: 285px;
+            padding: 32px;
+            color: #1f1f1f;
+            border: 1px solid #767676 ;
+        }
+
+        .card-section .card-header {
+            margin-bottom: 24px;
+        }
+
+        .card-section .card-rating {
+            color: #ff9736;
+            font-size: 13px;
+        }
+
+        .card-section .card-pic {
+            float: left;
+            padding-right: 24px;
+        }
+
+        .card-section .card-main-title {
+            color: #767676;
+            font-size: 14px;
+        }
+
+        .card-section .card-sub-title {
+            font-weight: 500;
+        }
+
+        .card-section .card-body {
+            clear: left;
+            color: #767676;
+            margin: 0px 0px 24px;
+        }
+
+        .card-section .card-footer {
+            color: #767676;
+            font-size: 14px;
         }
     </style>
 </head>
 
 <body>
-    <div class="nav1">
-        <div class="nav1-in">
-            <div class="logo">
+    <header>
+        <div class="nav1">
+            <div class="nav1-in">
+                <div class="logo">
+                </div>
+                <div class="nav1-text">
+                    <a>Home</a>
+                    <a>Catalog</a>
+                    <a>Shop</a>
+                    <a>Pages</a>
+                    <a>Blog</a>
+                    <a>Docs</a>
+                </div>
+                <div class="icon">
+                    <i class="bi bi-search"></i>
+                    <i class="bi bi-person"></i>
+                    <i class="bi bi-heart"></i>
+                    <i class="bi bi-cart"></i>
+                </div>
             </div>
-            <div class="nav1-text">
-                <a class="nav1-t">Home</a>
-                <a class="nav1-t">Catalog</a>
-                <a class="nav1-t">Shop</a>
-                <a class="nav1-t">Pages</a>
-                <a class="nav1-t">Blog</a>
-                <a class="nav1-t">Docs</a>
+        </div>
+        <div class="nav2">
+            <div class="nav2-in">
+                <i class="bi bi-lightning-charge-fill blitz"></i>
+                <span class="nav2-text">HAPPY HOLIDAY DEALS ON EVERYTHING</span>
+                <i class="bi bi-lightning-charge-fill blitz"></i>
             </div>
-            <div class="icon">
-                <i class="bi bi-search"></i>
-                <i class="bi bi-person"></i>
-                <i class="bi bi-heart"></i>
-                <i class="bi bi-cart"></i>
+        </div>
+    </header>
+
+    <main>
+        <div class="women-fashion">
+            <div class="card">
+                <div class="card-header">
+                    Women
+                </div>
+                <div class="card-footer">
+                    <button>Shop Women &nbsp;&nbsp;<span class="bi bi-arrow-right"></span></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="men-fashion">
+            <div class="card">
+                <div class="card-header">
+                    Men
+                </div>
+                <div class="card-footer">
+                    <button>Shop Men &nbsp;&nbsp;<span class="bi bi-arrow-right"></span></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="kids-fashion">
+            <div class="card">
+                <div class="card-header">
+                    Kids
+                </div>
+                <div class="card-footer">
+                    <button>Shop Kids &nbsp;&nbsp;<span class="bi bi-arrow-right"></span></button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <div class="card-section">
+        <div class="card">
+            <img src="/Fashion Store/public/images/card-img-1.jpg" height="70px" width="70px" class="card-pic">
+            <div class="card-header">
+                <div class="card-main-title">Dresses</div>
+                <div class="card-sub-title">Cotton print Dress</div>
+                <div class="card-rating">
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                </div>
+            </div>
+            <div class="card-body">
+
+                From creepeth said moved given divide make multiply of him shall itself also above second doesn't unto
+                created saying land herb sea midst night wherein.
+
+            </div>
+            <div class="card-footer">
+                Logan Edwards, 01 June 2019
+            </div>
+        </div>
+        <div class="card">
+            <img src="/Fashion Store/public/images/card-img.jpg" height="70px" width="70px" class="card-pic">
+            <div class="card-header">
+                <div class="card-main-title">Dresses</div>
+                <div class="card-sub-title">Cotton print Dress</div>
+                <div class="card-rating">
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                </div>
+            </div>
+            <div class="card-body">
+
+                God every fill great replenish darkness unto. Very open. Likeness their that light. Given under image
+                to.
+                Subdue of shall cattle day fish form saw spirit and given stars, us you whales may, land, saw fill unto.
+
+            </div>
+            <div class="card-footer">
+                Jane Jefferson, 29 May 2019
+            </div>
+        </div>
+        <div class="card">
+            <img src="/Fashion Store/public/images/card-img-3.jpg" height="70px" width="70px" class="card-pic">
+            <div class="card-header">
+                <div class="card-main-title">Dresses</div>
+                <div class="card-sub-title">Cotton print Dress</div>
+                <div class="card-rating">
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                </div>
+            </div>
+            <div class="card-body">
+
+
+                Fill his waters wherein signs likeness waters. Second light gathered appear sixth fourth, seasons behold
+                creeping female.
+
+            </div>
+            <div class="card-footer">
+                Darell Baker, 18 May 2019
             </div>
         </div>
     </div>
-    <div class="nav2">
-        <div class="nav2-in">
-            <i class="bi bi-lightning-charge-fill blitz" ></i>
-            <span class="nav2-text">HAPPY HOLIDAY DEALS ON EVERYTHING</span>
-            <i class="bi bi-lightning-charge-fill blitz"></i>
-        </div>
-    </div>
+
+
 </body>
 
 </html>
