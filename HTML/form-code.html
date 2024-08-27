@@ -1,0 +1,81 @@
+<!-- 
+    Form provides an UI from where user can interact with our application.
+    Interactions includes insert,update,delete,query etc.
+    Form is a generic container which have default functionality.
+    A form can submit andd resets its data without configuring any explicit functionality.
+
+
+    //Form Container
+    It is designed by using form tag 
+    Note - \
+    In a 
+    page we can submit the details only when they are enclosed in a form.
+
+    Syntax: 
+    <input type"text" name ="Name">   //Not Good
+    
+    Syntax: 
+    <form>
+    name: <input type"text" name ="Name">   //OK
+    </form>
+
+    //Form attributes id, class , name requied for idnentification
+
+    //Method- I tindicates hoe thr dsts dhould n=be submited to the server.
+    The values of 
+
+//get -get a default
+//post -> if we want to send a 
+
+//Insert query wouod forruj>
+
+//THEY orther values of method attribue are
+To sen dtha request of tyoe 08nc we use a sos lssiksssr 
+
+What is query string 
+It is a string which is constructed by web browser upon the user entering the details and clicking on submit button.
+Query string data would be in the form of key-value pair 
+
+this attributee value would be the location of a probram ehere thed ata has been sent.
+
+this attribute is used to verify whether the user enterd  data shuldit be validated or not is we use no 
+validate attribute then the input entered by the user would not b evalidated(email,number etc..).
+
+
+//Elements of form 
+
+//HTML5 VS HTML4
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        div,form{
+            height:200px;
+            width:400px;
+            border: 1px solid black;
+            margin:100px;
+            padding:50px;
+        }
+    </style>
+</head>
+<body>
+    <form method="post" action="http;//localhost:9999/FirstProject-01/first" required>
+        <dl>
+            <dt>Username</dt>
+            <dd>
+                <input type="text" name="txtEmail">
+            </dd>
+            <dt>Email</dt>
+            <dd>
+                <input type="Email" name="txtEmail">
+            </dd>
+        </dl>
+
+    </form>
+</body>
+</html>
