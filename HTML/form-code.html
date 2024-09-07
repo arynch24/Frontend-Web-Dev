@@ -53,19 +53,24 @@ validate attribute then the input entered by the user would not b evalidated(ema
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
     <style>
-        div,form{
+        body{
+            height:750px;
+        }
+        /* div,form{
             height:200px;
             width:400px;
             border: 1px solid black;
             margin:100px;
             padding:50px;
-        }
+        } */
     </style>
 </head>
-<body>
-    <form method="post" action="http;//localhost:9999/FirstProject-01/first" required>
+<body class="container-fluid d-flex justify-content-center align-items-center">
+    <form action=""  class="m-5 border p-5 border-info border-3 w-25  ">
         <dl>
+            <img src="/Fashion Store/public/images/world.png" class="rounded-circle h-25 w-25">
             <dt>Username</dt>
             <dd>
                 <input type="text" name="txtEmail">
@@ -75,7 +80,7 @@ validate attribute then the input entered by the user would not b evalidated(ema
                 <input type="Email" name="txtEmail">
             </dd>
         </dl>
-
+        <button>Submit</button>
     </form>
 </body>
 </html>
