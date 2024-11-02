@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam</title>
+    <link rel="stylesheet" href="./../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        .header-top {
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        header div span {
+            padding: 10px;
+            margin-left: 100px;
+        }
+
+
+        nav {
+            height: 40px;
+            width: 1250px;
+            display: flex;
+            justify-content: space-between;
+            margin-left: 100px;
+            align-items: center;
+        }
+
+        nav div span {
+            margin-left: 0px;
+        }
+
+        footer {
+            height: 400px;
+            background-color: orangered;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        input {
+            width: 460px;
+            text-decoration: none;
+            color: grey;
+            background-color: white;
+            border: 1px solid orangered;
+            padding: 8px 14px;
+        }
+
+        .footer-heading {
+            font-size: 32px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .footer-subheading {
+            margin-bottom: 40px;
+        }
+
+        button {
+            display: block;
+            margin-left: 180px;
+            margin-top: 10px;
+            border: 1px solid white;
+            color: white;
+            background-color: orangered;
+            padding: 7px 24px;
+        }
+
+        main {
+            height: 400px;
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white
+        }
+
+        .main-heading {
+            font-size: 28px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .main-subheading {
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .customer-reviews {
+            height: 450px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .cr-box {
+            width: 1200px;
+            background-color: antiquewhite;
+        }
+
+        .review-cards {
+            display: flex;
+            justify-content: space-around;
+            height: 250px;
+        }
+
+        .r-card {
+            height: 210px;
+            width: 450px;
+            padding: 16px;
+            background-color: white;
+            color: black;
+
+        }
+
+        .r-card img {
+            height: 40px;
+            width: 40px;
+            border-radius: 25px;
+        }
+
+        .surfboards {
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom:-100px;
+        }
+
+
+
+        .sf-box {
+            width: 1000px;
+        }
+
+        .s-card {
+            height: 400px;
+            width: 300px;
+        }
+
+        .s-card img{
+            height:180px;
+            width:165px;
+            margin-bottom: 30px;
+        }
+
+        .surfboard-cards{
+            display: flex;
+        }
+
+
+        .learn-more{
+            height:400px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        
+        }
+
+        .lm-content button{
+            border:1px solid black;
+            background-color: white;
+            color:black;
+            margin-left:0px;
+            margin-top:20px;
+        }
+
+        .lm-content{
+            height:300px;
+            width:500px;
+            margin-left:-150px;
+            padding:30px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-top">
+            <span>+48 789 456 123 &nbsp;&nbsp;&nbsp; contact@ssurfers.com </span>
+            <span>
+                <span class="bi bi-facebook"></span>
+                <span class="bi bi-youtube"></span>
+                <span class="bi bi-instagram"></span>
+                <span class="bi bi-pintrest"></span>
+                <span class="bi bi-twitter"></span>
+                <span class="bi bi-linkedin"></span>
+            </span>
+        </div>
+        <nav>
+            <div style="font-size: 28px;">SSURFERS</div>
+            <div>
+                <span>Home</span>
+                <span>Products</span>
+                <span>Blog</span>
+                <span>About us</span>
+                <span>Contact</span>
+                <span class="bi bi-cart"></span>
+            </div>
+        </nav>
+
+
+    </header>
+    <section>
+        <!-- main section -->
+        <main>
+            <div>
+                <div class="main-heading">Choose a board for yourself</div>
+                <div class="main-subheading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, dignissimos.
+                    recusandae aliquid officia<br> possimus eum, ut amet doloribus repellendus aspernatur.</div>
+                <button style="margin-left: 250px;border:1px solid orangered;">CHECK OUR BOARDS</button>
+            </div>
+        </main>
+        
+
+        <!-- surfboard section -->
+        <div class="surfboards">
+            
+
+            <div class="sf-box">
+                <div style="text-align: center;margin-bottom: 40px; font-size: 20px;">Surfboards</div>
+
+                <div class="surfboard-cards">
+                    <div class="s-card">
+                        <img src="./img1.png">
+                        <div style="color: rgb(145, 140, 140);">Product 8</div>
+                        <div style="margin:5px 0px;">450,00 USD</div>
+                        <div style="color:red;font-size: 14px;">Zobacz wiecej <span class="bi bi-arrow"></span></div>
+                    </div>
+                    <div class="s-card">
+                        <img src="./img2.png">
+                        <div style="color: rgb(145, 140, 140);">Product 8</div>
+                        <div style="margin:5px 0px;">450,00 USD</div>
+                        <div style="color:red;font-size: 14px;">Zobacz wiecej <span class="bi bi-arrow"></span></div>
+                    </div>
+                    <div class="s-card">
+                        <img src="./img3.png">
+                        <div style="color: rgb(145, 140, 140);">Product 8</div>
+                        <div style="margin:5px 0px;">450,00 USD</div>
+                        <div style="color:red;font-size: 14px;">Zobacz wiecej <span class="bi bi-arrow"></span></div>
+                    </div>
+                    <div class="s-card">
+                        <img src="./img4.png">
+                        <div style="color: rgb(145, 140, 140);">Product 8</div>
+                        <div style="margin:5px 0px;">450,00 USD</div>
+                        <div style="color:red;font-size: 14px;">Zobacz wiecej <span class="bi bi-arrow"></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- learn more section -->
+
+        <div class="learn-more">
+            <div>
+                <img src="./img5.png">
+            </div>
+            <div class="lm-content">
+                <div style="font-size: 28px;">Learn more about surfing</div>
+                <div>Lorem ipsum dolor sit amet consectetur. Dolor fugit, eius cupiditate cum vero consectetur iusto. Eligendi quia dolorem nobis magni ipsa excepturi temporibus cumque quidem ab suscipit quaerat facere error harum et commodi, modi reiciendis? Accusamus sint incidunt quod numquam enim tempore? Delectus, deserunt, dignissimos saepe consequatur del.</div>
+                <button>READ MORE</button>
+            </div>
+        </div>
+
+
+
+        <!-- customer reviews -->
+        <div class="customer-reviews">
+            <div class="cr-box">
+                <div style="font-size: 32px;margin-top: 10px;">Customer reviews</div>
+                <div style="margin:40px 0px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, dignissimos.
+                    recusandae aliquid officia<br> possimus eum, ut amet doloribus repellendus aspernatur.</div>
+
+                <div class="review-cards">
+                    <div class="r-card">
+                        <img src="../Fashion Store/public/images/men.jpeg" alt="">
+                        <p>Lorem ipsum dolor sit . Modi nam sit reprehenderit
+                            <br> perferendis aperiam dolor qui cum rerum
+                            <br>ea voluptatibus quae incidunt omnis?
+                        </p>
+
+                        <p style="color: red;">@Julio_Diaz</p>
+                    </div>
+                    <div class="r-card">
+                        <img src="../Fashion Store/public/images/women.jpg" alt="">
+                        <p>Lorem ipsum dolor sit . Modi nam sit reprehenderit
+                            <br> perferendis aperiam dolor qui cum rerum
+                            <br>ea voluptatibus quae incidunt omnis?
+                        </p>
+
+                        <p style="color: red;">@Julio_Diaz</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <div class="footer-heading">Sign up for the newsletter!</div>
+            <div class="footer-subheading">Sign up for the newsletter and recieve free web design knowledge.</div>
+            <input type="email" placeholder="Your email">
+            <button>SIGN UP</button>
+        </div>
+
+    </footer>
+</body>
+
+</html>
