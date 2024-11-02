@@ -1,5 +1,0 @@
-let marks=[22,54,63,43,98,56];
-console.log(marks);
-console.log(typeof(marks))
-//length of array
-console.log(marks.length);//property
