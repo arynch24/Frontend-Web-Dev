@@ -1,0 +1,9 @@
+.user-container{
+    padding:25px;
+    background-color: black;
+    color:white;
+}
+
+#user-image{
+    height:250px;
+}
