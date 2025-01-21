@@ -7,7 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
     { id: 4, name: 'Product 4', price: 950.399 },
   ]
 
-  const cart = []
+  // const cart = []
+  let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
   const productList = document.getElementById('product-list')
   const cartItems = document.getElementById('cart-items')
@@ -39,15 +40,17 @@ document.addEventListener('DOMContentLoaded', () => {
   //Add item to the cart 
   function addToCart(product) {
     cart.push(product);
+    saveCart()
     console.log(cart)
   }
-  
-   // Delete item from cart
-   function deleteItem(productId) {
+
+  // Delete item from cart
+  function deleteItem(productId) {
     const index = cart.findIndex(item => item.id === productId);
     if (index !== -1) {
       cart.splice(index, 1);
     }
+    saveCart()
     renderCartElements();
   }
 
@@ -67,10 +70,10 @@ document.addEventListener('DOMContentLoaded', () => {
         cartItem.innerHTML = `
         ${item.name} - $${item.price.toFixed(2)} <button item-id="${item.id}" id="delete">X</button>`
 
-        cartItem.querySelector('button').addEventListener('click',(e)=>{
-            const productId = parseInt(e.target.getAttribute("item-id"));
-            deleteItem(productId)
-            totalPrice-=item.price.toFixed(2);
+        cartItem.querySelector('button').addEventListener('click', (e) => {
+          const productId = parseInt(e.target.getAttribute("item-id"));
+          deleteItem(productId)
+          totalPrice -= item.price.toFixed(2);
 
         })
         cartItems.appendChild(cartItem);
@@ -85,7 +88,14 @@ document.addEventListener('DOMContentLoaded', () => {
   checkOutButton.addEventListener('click', () => {
     cart.length = 0
     renderCartElements();
+    saveCart()
     alert("Check Out Successfully")
     totalPriceDisplay.textContent = 0;
   })
+
+  function saveCart() {
+    localStorage.setItem('cart', JSON.stringify(cart));
+  }
+
+  renderCartElements()
 })
